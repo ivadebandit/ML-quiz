@@ -1,0 +1,4 @@
+category,type,question,correctanswer,optiona,optionb,optionc,optiond
+basics,mcq,what is narrow ai?,ai that excels at one task,ai that does everything,smarter than humans,ai that is conscious,
+basics,fill,what is the name of the process of finding patterns in the data?,machine learning,,,,
+ethics,mcq,what amplifies bias?,data,the algorithm,the hardware,the user,
