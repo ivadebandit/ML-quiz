@@ -5,7 +5,7 @@ def clear():
     os.system('cls' if os.name =='nt' else 'clear')
 def main():
     clear()
-    print("welcome test")
+    print("welcome to the quiz!\n")
     df = pd.read_csv('cards.csv')
     score=0
 
@@ -16,16 +16,25 @@ def main():
             print(f"b) {row['optionb']}")
             print(f"c) {row['optionc']}")
             print(f"d) {row['optiond']}")
-        answer = input("ypur answer")
+        answer = input("\nyour answer ")
+        answer=answer.strip().lower()
 
-        if answer.strip().lower()== str(row['correctanswer']).strip().lower():
+        if row['type']=='mcq':
+            if answer =='a':
+                answer=str(row['optiona']).strip().lower()
+            elif answer =='b':
+                answer=str(row['optionb']).strip().lower()
+            elif answer=='c':
+                answer=str(row['optionc']).strip().lower()
+            elif answer=='d':
+                answer=str(row['optiond']).strip().lower()
+        if answer==str(row['correctanswer']).strip().lower():
             print("correct")
-            score +=1
+            score+=1
         else:
-            print(f"wrong, correct: {row['correctanswer']}\n")
-        input("press enter")
+            print("wrong answer")
+        input("\npress enter for next question")
         clear()
-    print(f"over, score: {score}/{len(df)}")
+    print(f"quiz is over: {score}/{len(df)}")
 if __name__=="__main__":
     main()
-                                        
