@@ -9,6 +9,8 @@ def main():
     df = pd.read_csv('cards.csv')
     score=0
 
+    wrong=[]
+
     for index, row in df.iterrows():
         print(f"question {index+1} {row['question']}")
         if row['type'] =='mcq':
@@ -32,9 +34,23 @@ def main():
             print("correct")
             score+=1
         else:
-            print("wrong answer")
+            print(f"wrong answer, correct answer is {row['correctanswer']}")
+            wrong.append(row)
+
         input("\npress enter for next question")
         clear()
+
     print(f"quiz is over: {score}/{len(df)}")
+
+
+    if len(wrong) > 0:
+        wrong_df= pd.DataFrame(wrong)
+        wrong_df.to_csv('mistakes.csv',index=False)
+
+        print(f"you got {len(wrong)} questions wrong, saved as mistakes.csv")
+    else:
+        print("no mistakes made")
+
+
 if __name__=="__main__":
     main()

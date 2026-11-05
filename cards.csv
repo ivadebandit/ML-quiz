@@ -1,4 +1,20 @@
 category,type,question,correctanswer,optiona,optionb,optionc,optiond
-basics,mcq,what is narrow ai?,ai that excels at one task,ai that does everything,ai that excels at one task,smarter than humans,ai that is conscious
-basics,fill,what is the name of the process of finding patterns in the data?,machine learning,,,,
-ethics,mcq,what amplifies bias?,data,the algorithm,the hardware,the user,data
+basics,mcq,what does ai stand for?,artificial intelligence,automated information,artificial intelligence,advanced integration,algorithmic input
+basics,fill,what type of ai exists today? (narrow or general),narrow,,,,
+basics,mcq,what is the term for ai that surpasses human intelligence in every domain?,asi,agi,narrow ai,asi,machine learning
+basics,mcq,what is the first step of the ai development pipeline?,collect data,deploy,collect data,train model,validate
+ethics,mcq,what amplifies bias in an ai system?,data,the algorithm,the hardware,the user,data
+ethics,fill,what is the term for when biased ai decisions create biased future data?,feedback loop,,,,
+ethics,mcq,which fairness definition requires equal positive prediction rates across groups?,demographic parity,equalized odds,demographic parity,calibration,individual fairness
+ethics,mcq,is it mathematically possible to satisfy demographic parity and equalized odds at the same time if base rates differ?,no,yes,no,only with deep learning,only with small data
+data,mcq,what scaling method transforms data to have a mean of 0 and a standard deviation of 1?,standard scaling,min-max scaling,standard scaling,pca scaling,log scaling
+data,mcq,using readmission date to predict hospital readmission is an example of what?,target leakage,feature leakage,target leakage,concept drift,survivorship bias
+data,fill,what type of shift occurs when the relationship between inputs and outputs changes over time?,concept drift,,,,
+data,mcq,a dataset of only successful startups is an example of what?,survivorship bias,selection bias,survivorship bias,non-response bias,convenience sampling
+supervised,mcq,what type of supervised learning predicts continuous values?,regression,classification,regression,clustering,generative
+supervised,fill,what function maps any real number to a value between 0 and 1?,sigmoid,,,,
+supervised,mcq,which regularization method tends to make some parameters exactly zero?,l1 regularization,l1 regularization,l2 regularization,dropout,early stopping
+supervised,mcq,what algorithm finds the hyperplane that maximizes the margin between classes?,support vector machine,decision tree,support vector machine,logistic regression,naive bayes
+supervised,fill,what does svm stand for?,support vector machine,,,,
+supervised,mcq,what is the loss function used for linear regression called?,mean squared error,mean absolute error,mean squared error,cross entropy,hinge loss
+supervised,fill,what is the maximum margin classifier also known as? (abbreviation is fine),svm,,,,
