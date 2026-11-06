@@ -1,20 +1,34 @@
 category,type,question,correctanswer,optiona,optionb,optionc,optiond
-basics,mcq,what does ai stand for?,artificial intelligence,automated information,artificial intelligence,advanced integration,algorithmic input
+basics,mcq,what does ai stand for?,artificial intelligence,artificial intelligence,automated information,advanced integration,algorithmic input
 basics,fill,what type of ai exists today? (narrow or general),narrow,,,,
 basics,mcq,what is the term for ai that surpasses human intelligence in every domain?,asi,agi,narrow ai,asi,machine learning
-basics,mcq,what is the first step of the ai development pipeline?,collect data,deploy,collect data,train model,validate
-ethics,mcq,what amplifies bias in an ai system?,data,the algorithm,the hardware,the user,data
+basics,mcq,what is the first step of the ai development pipeline?,collect data,deploy,train model,collect data,validate
+basics,mcq,which year did the deep learning revolution start with alexnet?,2012,2012,2005,2018,1997
+basics,mcq,what is the process of adjusting model parameters to minimize error called?,training,testing,deploying,validating,training
+basics,fill,what does agi stand for?,artificial general intelligence,,,,
+ethics,mcq,what amplifies bias in an ai system?,data,the algorithm,the hardware,data,the user
 ethics,fill,what is the term for when biased ai decisions create biased future data?,feedback loop,,,,
-ethics,mcq,which fairness definition requires equal positive prediction rates across groups?,demographic parity,equalized odds,demographic parity,calibration,individual fairness
-ethics,mcq,is it mathematically possible to satisfy demographic parity and equalized odds at the same time if base rates differ?,no,yes,no,only with deep learning,only with small data
-data,mcq,what scaling method transforms data to have a mean of 0 and a standard deviation of 1?,standard scaling,min-max scaling,standard scaling,pca scaling,log scaling
+ethics,mcq,which fairness definition requires equal positive prediction rates across groups?,demographic parity,demographic parity,equalized odds,calibration,individual fairness
+ethics,mcq,is it mathematically possible to satisfy demographic parity and equalized odds at the same time if base rates differ?,no,yes,only with deep learning,only with small data,no
+ethics,mcq,adding calibrated noise to data to protect privacy is called what?,differential privacy,data masking,anonymization,differential privacy,encryption
+ethics,fill,what type of models are least interpretable but often most accurate?,deep neural networks,,,,
+ethics,mcq,what is it called when an ai system makes a wrong prediction that reinforces negative stereotypes?,feedback loop,feedback loop,distribution shift,data leakage,bias mitigation
+data,mcq,what scaling method transforms data to have a mean of 0 and a standard deviation of 1?,standard scaling,min-max scaling,pca scaling,log scaling,standard scaling
 data,mcq,using readmission date to predict hospital readmission is an example of what?,target leakage,feature leakage,target leakage,concept drift,survivorship bias
 data,fill,what type of shift occurs when the relationship between inputs and outputs changes over time?,concept drift,,,,
-data,mcq,a dataset of only successful startups is an example of what?,survivorship bias,selection bias,survivorship bias,non-response bias,convenience sampling
-supervised,mcq,what type of supervised learning predicts continuous values?,regression,classification,regression,clustering,generative
+data,mcq,a dataset of only successful startups is an example of what?,survivorship bias,survivorship bias,selection bias,non-response bias,convenience sampling
+data,mcq,converting categorical variables like color into binary columns is called what?,one-hot encoding,label encoding,scaling,binning,one-hot encoding
+data,fill,what split is used for tuning hyperparameters?,validation,,,,
+data,mcq,what type of leakage occurs when test data statistics influence training preprocessing?,feature leakage,target leakage,feature leakage,concept drift,label shift
+data,mcq,a spam filter trained on 5% spam deployed when spam is 40% is an example of what?,label shift,covariate shift,label shift,concept drift,feature leakage
+supervised,mcq,what type of supervised learning predicts continuous values?,regression,classification,clustering,regression,generative
 supervised,fill,what function maps any real number to a value between 0 and 1?,sigmoid,,,,
-supervised,mcq,which regularization method tends to make some parameters exactly zero?,l1 regularization,l1 regularization,l2 regularization,dropout,early stopping
-supervised,mcq,what algorithm finds the hyperplane that maximizes the margin between classes?,support vector machine,decision tree,support vector machine,logistic regression,naive bayes
+supervised,mcq,which regularization method tends to make some parameters exactly zero?,l1 regularization,l2 regularization,dropout,l1 regularization,early stopping
+supervised,mcq,what algorithm finds the hyperplane that maximizes the margin between classes?,support vector machine,support vector machine,decision tree,logistic regression,naive bayes
 supervised,fill,what does svm stand for?,support vector machine,,,,
-supervised,mcq,what is the loss function used for linear regression called?,mean squared error,mean absolute error,mean squared error,cross entropy,hinge loss
-supervised,fill,what is the maximum margin classifier also known as? (abbreviation is fine),svm,,,,
+supervised,mcq,what is the loss function used for linear regression called?,mean squared error,mean absolute error,cross entropy,mean squared error,hinge loss
+supervised,fill,what is the maximum margin classifier also known as? (abbreviation),svm,,,,
+supervised,mcq,which algorithm uses entropy and information gain to split data?,decision tree,linear regression,svm,naive bayes,decision tree
+supervised,fill,what is the name of the algorithm used to train neural networks by calculating gradients backwards?,backpropagation,,,,
+supervised,mcq,what happens when a model is too complex and memorizes training data?,overfitting,overfitting,underfitting,regularization,bias
+supervised,fill,what is the probabilistic classifier based on bayes theorem called?,naive bayes,,,,
