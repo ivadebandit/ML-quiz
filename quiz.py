@@ -4,9 +4,9 @@ import os
 def clear():
     os.system('cls' if os.name =='nt' else 'clear')
 
-def run_quiz(filename):
+def run_quiz(df):
     clear()
-    df = pd.read_csv(filename)
+    #df = pd.read_csv(filename)
     score = 0
     wrong = []
 
@@ -52,30 +52,52 @@ def run_quiz(filename):
             os.remove('mistakes.csv')
         print("perfect score! no mistakes")
 
+
 def main():
+    questions=pd.read_csv('cards.csv')
     while True:
         clear()
         print("welcome to mlquiz!\n")
         print("1. take full quiz")
+        print("2. choose a category")
         
         if os.path.exists('mistakes.csv'):
-            print("2. study mistakes")
+            print("3. study mistakes")
             
-        print("3. quit")
+        print("4. quit")
 
         choice = input("\nselect an option: ")
 
         if choice == '1':
-            run_quiz('cards.csv')
+            run_quiz(questions)
             input("\npress enter to return to menu")
-        elif choice == '2' and os.path.exists('mistakes.csv'):
-            run_quiz('mistakes.csv')
+        elif choice =='2':
+            categories=questions['category'].unique()
+            print("\ncategories:")
+            for i in range(len(categories)):
+                print(f"{i+1}. {categories[i]}")
+            choice=input("\npick a number ")
+
+            try:
+                index=int(choice)-1
+                if 0 <= index < len(categories):
+                    selected=categories[index]
+                    filtered = questions[questions['category']==selected]
+                    run_quiz(filtered)
+                    input("\npress enter to return to menu")
+                else:
+                    print("invalid number")
+                    input("press enter to reenter number")
+            except ValueError:
+                print("please type a number")
+                input("press enter to try again")
+        
+        elif choice == '3' and os.path.exists('mistakes.csv'):
+            mistakes_df=pd.read_csv('mistakes.csv')
+            run_quiz(mistakes_df)
             input("\npress enter to return to menu")
-        elif choice == '3':
+        elif choice=='4':
             break
-        else:
-            print("invalid choice")
-            input("press enter to try again")
 
 if __name__ == "__main__":
     main()

@@ -1,8 +1,2 @@
 category,type,question,correctanswer,optiona,optionb,optionc,optiond
-basics,mcq,what is the process of adjusting model parameters to minimize error called?,training,testing,deploying,validating,training
-ethics,fill,what is the term for when biased ai decisions create biased future data?,feedback loop,,,,
-ethics,fill,what type of models are least interpretable but often most accurate?,deep neural networks,,,,
-data,fill,what split is used for tuning hyperparameters?,validation,,,,
-data,mcq,a spam filter trained on 5% spam deployed when spam is 40% is an example of what?,label shift,covariate shift,label shift,concept drift,feature leakage
-supervised,fill,what function maps any real number to a value between 0 and 1?,sigmoid,,,,
 supervised,fill,what is the name of the algorithm used to train neural networks by calculating gradients backwards?,backpropagation,,,,
