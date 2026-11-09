@@ -32,3 +32,23 @@ supervised,mcq,which algorithm uses entropy and information gain to split data?,
 supervised,fill,what is the name of the algorithm used to train neural networks by calculating gradients backwards?,backpropagation,,,,
 supervised,mcq,what happens when a model is too complex and memorizes training data?,overfitting,overfitting,underfitting,regularization,bias
 supervised,fill,what is the probabilistic classifier based on bayes theorem called?,naive bayes,,,,
+basics,mcq,what subfield of ai focuses on processing images?,computer vision,natural language processing,computer vision,neural networks,robotics
+basics,fill,what type of ai is a chess engine,narrow,,,,
+basics,mcq,what does the term deep in deep learning refer to?,many layers,many layers,complex math,big data,fast gpus
+ethics,fill,what is the trade off called when a model is highly accurate but hard to explain?,interpretability,,,,
+data,mcq,what is the usual train test split ratio?,70-15-15,50-25-25,80-10-10,100-0-0,70-15-15
+data,fill,what typeof shift occurs when the input distribution changes but the relationship stays the same?,covariate shift,,,,
+supervised,mcq,what is the main goal of gradient descent?,minimize the loss function,minimize the loss function,maximize the score,increase variance,reduce features
+supervised,fill,what is the term for a model that is too simple and can't capure the pattern in the data itself?,underfitting,,,,
+supervised,mcq,which algorithm combines multiple desicion trees?,random forest,logistic regression,vector machines,random forest,naive bayes
+supervised,fill,what is the name of the parameter that controls the step size in gradient descent?,learning rate,,,,
+supervised,fill,what is the term for the penalty added to a loss function to prevent overfitting?,regularization,,,,
+supervised,fill,what type of loss function does svm use?,hinge loss,,,,
+evaluation,mcq,what is the mean of precision and recall called?,f1 score,accuracy,f1 score,auc,mean squared error
+evaluation,fill,what metric measures the fraction of actual positives that were correctly identified?,recall,,,,
+evaluation,mcq,what is it  called when a model performs well on training data but not on test data?,overfitting,overfitting,underfitting,bias,variance
+evaluation,mcq,what does high bias indicate about a model?,underfitting,overfitting,underfitting,high variance,data leakage
+evaluation,mcq,if the model is really unbalanced which metric is misleading?,accuracy,recall,presicion,accuracy,f1 score
+kernels,mcq,what allows models to work in high dimensional space without computing the coordinates?,kernel trick,kernel trick,gradient descent,feature scaling,overfitting
+kernels,fill,what kernel is also known as the rbf kernel?,Gaussian,,,,
+kernels,mcq,which property must a kernel matrix satisfy to be valid?,symmetric,diagonal,orthogonal,symmetric,equal

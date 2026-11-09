@@ -1,2 +1,10 @@
 category,type,question,correctanswer,optiona,optionb,optionc,optiond
-supervised,fill,what is the name of the algorithm used to train neural networks by calculating gradients backwards?,backpropagation,,,,
+basics,fill,what type of ai exists today? (narrow or general),narrow,,,,
+basics,mcq,what is the term for ai that surpasses human intelligence in every domain?,asi,agi,narrow ai,asi,machine learning
+basics,mcq,what is the first step of the ai development pipeline?,collect data,deploy,train model,collect data,validate
+basics,mcq,which year did the deep learning revolution start with alexnet?,2012,2012,2005,2018,1997
+basics,mcq,what is the process of adjusting model parameters to minimize error called?,training,testing,deploying,validating,training
+basics,fill,what does agi stand for?,artificial general intelligence,,,,
+basics,mcq,what subfield of ai focuses on processing images?,computer vision,natural language processing,computer vision,neural networks,robotics
+basics,fill,what type of ai is a chess engine,narrow,,,,
+basics,mcq,what does the term deep in deep learning refer to?,many layers,many layers,complex math,big data,fast gpus
